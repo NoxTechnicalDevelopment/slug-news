@@ -44,8 +44,8 @@
       id: 'gaming',
       name: 'Gaming',
       articles: [
-        { title: 'Film Festival Highlights', summary: 'Indie films and breakout directors take the spotlight.', slug: 'article1' },
-        { title: 'Art Auction Sets Records', summary: 'Contemporary works fetch unprecedented prices at auction.', slug: 'article2' }
+        { title: 'Student Club Releases New Game', summary: 'A student club has released a newly developed game — highlighting student development, features, and the campus game-making community.', slug: 'article1' },
+        { title: 'UCSC Team Creates Wildfire Prep Games', summary: 'A UCSC team developed interactive games to educate about wildfire risks and preparedness, connecting climate-driven wildfire trends to practical safety steps.', slug: 'article2' }
       ]
     }
   ];
