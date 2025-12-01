@@ -20,7 +20,7 @@
       id: 'clubs',
       name: 'Clubs',
       articles: [
-        { title: 'AI Startups Raise Record Funding', summary: 'Investors pour capital into generative models and applications. Investors pour capital into generative models and applications. Investors pour capital into generative models and applications.', slug: 'article1' },
+        { title: 'Finding Your Place', summary: 'Move-in and early events like Slug Start and Cornucopia help new students find community, discover clubs, and settle into campus life.', slug: 'article1' },
         { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations. Investors pour capital into generative models and applications. Investors pour capital into generative models and applications.', slug: 'article2' }
       ]
     },
