@@ -114,7 +114,7 @@
     {/if}
   </div>
 
-  <footer class="site-footer">© {new Date().getFullYear()} Slug News — Demo content</footer>
+  <footer class="site-footer">© {new Date().getFullYear()} Slug News — Stud</footer>
 </main>
 
 <style>
@@ -142,8 +142,14 @@
   }
   .brand h1 {
     margin: 0;
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 800;
+    display: inline-block;
+    background: #FFD93D; /* warm yellow */
+    color: #0b1220;
+    padding: 0.15rem 0.4rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(21,27,36,0.06);
   }
   .top-nav {
     display: flex;
