@@ -13,7 +13,7 @@
       name: 'Food',
       articles: [
         { title: 'The Best Dining Hall at UCSC and Why It May Be Changing', summary: 'Cowell remains a student favorite, but other dining halls are adopting features like all-day pizza and expanded menus. New dining leadership aims to improve equity across colleges, narrowing the quality gap.', slug: 'article1' },
-        { title: 'UCSC Strikes: How to Eat During a Union Strike', summary: 'Practical tips and strategies for students to access meals and cope with disruptions during a campus union strike.', slug: 'article2' }
+        { title: 'UCSC Strikes: How to Eat During a Union Strike', summary: 'During the AFSCME strike most dining halls reduced service; College 9/John R. Lewis remained open — practical tips for finding meals and coping with disruptions on campus.', slug: 'article2' }
       ]
     },
     {
