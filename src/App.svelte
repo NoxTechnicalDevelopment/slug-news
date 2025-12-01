@@ -1,7 +1,5 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
-  import svelteLogo from './assets/svelte.svg';
-  import viteLogo from '/vite.svg';
   import Category from './lib/Category.svelte';
   import ArticlePage from './lib/ArticlePage.svelte';
 
@@ -11,43 +9,43 @@
   // Sample data: 5 categories, 2 articles each
   const categories: CategoryType[] = [
     {
-      id: 'world',
-      name: 'World',
+      id: 'food',
+      name: 'Food',
       articles: [
-        { title: 'Global Summit 2025 Ends with Climate Accord', summary: 'Leaders agree on new emissions targets and a framework for follow-up commitments.', slug: 'global-summit-2025' },
-        { title: 'Elections Roundup', summary: 'Key races reshape political maps across several countries.', slug: 'elections-roundup' }
+        { title: 'The Best Dining Hall at UCSC and Why it May be Changing.', summary: 'Leaders agree on new emissions targets and a framework for follow-up commitments.', slug: 'article1' },
+        { title: 'UCSC Strikes: How to Eat During a Union Strike', summary: 'Key races reshape political maps across several countries.', slug: 'article2' }
       ]
     },
     {
-      id: 'technology',
-      name: 'Technology',
+      id: 'clubs',
+      name: 'Clubs',
       articles: [
-        { title: 'AI Startups Raise Record Funding', summary: 'Investors pour capital into generative models and applications.', slug: 'ai-startups-funding' },
-        { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations.', slug: 'quantum-breakthrough' }
+        { title: 'AI Startups Raise Record Funding', summary: 'Investors pour capital into generative models and applications.', slug: 'article1' },
+        { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations.', slug: 'article2' }
       ]
     },
     {
-      id: 'business',
-      name: 'Business',
+      id: 'performing-arts',
+      name: 'Performing Arts',
       articles: [
-        { title: 'Markets Rally', summary: 'Stocks climb after a string of positive economic indicators.', slug: 'markets-rally' },
-        { title: 'Retailers Shift Strategy', summary: 'Omnichannel experiences become central to growth plans.', slug: 'retailers-shift' }
+        { title: 'Markets Rally', summary: 'Stocks climb after a string of positive economic indicators.', slug: 'article1' },
+        { title: 'Retailers Shift Strategy', summary: 'Omnichannel experiences become central to growth plans.', slug: 'article2' }
       ]
     },
     {
       id: 'sports',
       name: 'Sports',
       articles: [
-        { title: 'Championship Thriller', summary: 'A last-minute goal seals the championship in dramatic fashion.', slug: 'championship-thriller' },
-        { title: 'Olympic Preparations', summary: 'Host city finalizes venues and schedules ahead of the games.', slug: 'olympic-preparations' }
+        { title: 'Championship Thriller', summary: 'A last-minute goal seals the championship in dramatic fashion.', slug: 'article1' },
+        { title: 'Olympic Preparations', summary: 'Host city finalizes venues and schedules ahead of the games.', slug: 'article2' }
       ]
     },
     {
-      id: 'culture',
-      name: 'Culture',
+      id: 'gaming',
+      name: 'Gaming',
       articles: [
-        { title: 'Film Festival Highlights', summary: 'Indie films and breakout directors take the spotlight.', slug: 'film-festival-highlights' },
-        { title: 'Art Auction Sets Records', summary: 'Contemporary works fetch unprecedented prices at auction.', slug: 'art-auction-records' }
+        { title: 'Film Festival Highlights', summary: 'Indie films and breakout directors take the spotlight.', slug: 'article1' },
+        { title: 'Art Auction Sets Records', summary: 'Contemporary works fetch unprecedented prices at auction.', slug: 'article2' }
       ]
     }
   ];
