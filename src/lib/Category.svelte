@@ -2,13 +2,14 @@
   import ArticleCard from './ArticleCard.svelte';
   type Article = { title: string; summary: string; url?: string; slug?: string };
   export let category: { id: string; name: string; articles: Article[] };
+  export let compact: boolean = false;
 </script>
 
 <section class="category" id={category.id}>
   <h2>{category.name}</h2>
   <div class="articles">
     {#each category.articles as article (article.title)}
-      <ArticleCard {article} categoryId={category.id} />
+  <ArticleCard {article} categoryId={category.id} compact={compact} />
     {/each}
   </div>
 </section>

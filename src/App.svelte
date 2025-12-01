@@ -20,8 +20,8 @@
       id: 'clubs',
       name: 'Clubs',
       articles: [
-        { title: 'AI Startups Raise Record Funding', summary: 'Investors pour capital into generative models and applications.', slug: 'article1' },
-        { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations.', slug: 'article2' }
+        { title: 'AI Startups Raise Record Funding', summary: 'Investors pour capital into generative models and applications. Investors pour capital into generative models and applications. Investors pour capital into generative models and applications.', slug: 'article1' },
+        { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations. Investors pour capital into generative models and applications. Investors pour capital into generative models and applications.', slug: 'article2' }
       ]
     },
     {
@@ -108,8 +108,8 @@
     {:else}
       <section class="categories-grid">
         {#each categories as category}
-          <Category {category} />
-        {/each}
+            <Category {category} compact={true} />
+          {/each}
       </section>
     {/if}
   </div>
@@ -135,18 +135,17 @@
     align-items: start;
     margin-bottom: 1rem;
   }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
   .brand h1 {
     margin: 0;
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size: 1.85rem;
+    font-weight: 700; /* slightly less heavy to soften appearance */
     display: inline-block;
-    color: #0b1220;
-    padding-bottom: 0.3rem;
+    background: #146effdd;
+    color: #ffffff; /* white text for contrast */
+    padding: 0.28rem 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(11,39,90,0.12);
+    letter-spacing: -0.2px;
   }
   .top-nav {
     display: flex;

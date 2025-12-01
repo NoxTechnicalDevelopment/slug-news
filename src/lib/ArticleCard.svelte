@@ -1,6 +1,7 @@
 <script lang="ts">
   export let article: { title: string; summary: string; url?: string; slug?: string };
   export let categoryId: string | undefined;
+  export let compact: boolean = false;
 
   // compute the href for the whole-card link when possible
   let href: string | null = null;
@@ -12,15 +13,19 @@
 </script>
 
 {#if href}
-  <a class="article-card card-link" href={href} target={article.url ? '_blank' : undefined} rel={article.url ? 'noreferrer noopener' : undefined}>
+  <a class="article-card card-link" href={href} target={article.url ? '_blank' : undefined} rel={article.url ? 'noreferrer noopener' : undefined} aria-label={article.title}>
     <h3>{article.title}</h3>
-    <p class="summary">{article.summary}</p>
-    <span class="read-more">Read more</span>
+    {#if !compact}
+      <p class="summary">{article.summary}</p>
+      <span class="read-more">Read more</span>
+    {/if}
   </a>
 {:else}
-  <article class="article-card">
+  <article class="article-card" aria-label={article.title}>
     <h3>{article.title}</h3>
-    <p class="summary">{article.summary}</p>
+    {#if !compact}
+      <p class="summary">{article.summary}</p>
+    {/if}
     <!-- no link available -->
   </article>
 {/if}
