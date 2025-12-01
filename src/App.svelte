@@ -12,8 +12,8 @@
       id: 'food',
       name: 'Food',
       articles: [
-        { title: 'The Best Dining Hall at UCSC and Why it May be Changing.', summary: 'Leaders agree on new emissions targets and a framework for follow-up commitments.', slug: 'article1' },
-        { title: 'UCSC Strikes: How to Eat During a Union Strike', summary: 'Key races reshape political maps across several countries.', slug: 'article2' }
+        { title: 'The Best Dining Hall at UCSC and Why It May Be Changing', summary: 'Cowell remains a student favorite, but other dining halls are adopting features like all-day pizza and expanded menus. New dining leadership aims to improve equity across colleges, narrowing the quality gap.', slug: 'article1' },
+        { title: 'UCSC Strikes: How to Eat During a Union Strike', summary: 'Practical tips and strategies for students to access meals and cope with disruptions during a campus union strike.', slug: 'article2' }
       ]
     },
     {
@@ -28,8 +28,8 @@
       id: 'performing-arts',
       name: 'Performing Arts',
       articles: [
-        { title: 'Markets Rally', summary: 'Stocks climb after a string of positive economic indicators.', slug: 'article1' },
-        { title: 'Retailers Shift Strategy', summary: 'Omnichannel experiences become central to growth plans.', slug: 'article2' }
+        { title: 'Los Mejicas: UCSC’s Baile Folklorico Legacy', summary: 'Los Mejicas, founded in 1972, preserves Mexican folkloric dance at UCSC while navigating funding and identity challenges to sustain its cultural legacy.', slug: 'article1' },
+        { title: 'Rainbow Theater: A Student-Driven Multicultural Stage', summary: 'Founded in 1993, Rainbow Theater centers student-created multicultural productions and recently gained departmental recognition to expand its reach and resources.', slug: 'article2' }
       ]
     },
     {
