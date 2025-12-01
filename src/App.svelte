@@ -36,8 +36,8 @@
       id: 'sports',
       name: 'Sports',
       articles: [
-        { title: 'Championship Thriller', summary: 'A last-minute goal seals the championship in dramatic fashion.', slug: 'article1' },
-        { title: 'Olympic Preparations', summary: 'Host city finalizes venues and schedules ahead of the games.', slug: 'article2' }
+        { title: 'Sports Community at UCSC', summary: "If you're a student at UCSC you pay for sports, but do you get what you pay for.", slug: 'article1' },
+        { title: 'College Athletes: Health, Protections, and NIL Challenges', summary: 'Our student athletes have historically not been taken care of, and often face harsh futures and little representation for compensation.', slug: 'article2' }
       ]
     },
     {
