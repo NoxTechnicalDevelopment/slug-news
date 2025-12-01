@@ -90,27 +90,29 @@
     </nav>
   </header>
 
-  {#if activeArticleSlug && activeCategory}
-    <ArticlePage categoryId={activeCategory.id} slug={activeArticleSlug} />
-  {:else if activeCategoryId}
-    {#if activeCategory}
-      <div class="category-page">
-        <a class="back" href="#/">← All categories</a>
-        <Category category={activeCategory} />
-      </div>
+  <div class="content">
+    {#if activeArticleSlug && activeCategory}
+      <ArticlePage categoryId={activeCategory.id} slug={activeArticleSlug} />
+    {:else if activeCategoryId}
+      {#if activeCategory}
+        <div class="category-page">
+          <a class="back" href="#/">← All categories</a>
+          <Category category={activeCategory} />
+        </div>
+      {:else}
+        <div class="not-found">
+          <a class="back" href="#/">← All categories</a>
+          <p>Category not found.</p>
+        </div>
+      {/if}
     {:else}
-      <div class="not-found">
-        <a class="back" href="#/">← All categories</a>
-        <p>Category not found.</p>
-      </div>
+      <section class="categories-grid">
+        {#each categories as category}
+          <Category {category} />
+        {/each}
+      </section>
     {/if}
-  {:else}
-    <section class="categories-grid">
-      {#each categories as category}
-        <Category {category} />
-      {/each}
-    </section>
-  {/if}
+  </div>
 
   <footer class="site-footer">© {new Date().getFullYear()} Slug News — Demo content</footer>
 </main>
@@ -122,6 +124,9 @@
     color: #0f172a;
     max-width: 1100px;
     margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   .site-header {
     display: flex;
@@ -140,13 +145,6 @@
     font-size: 1.25rem;
     font-weight: 700;
   }
-  .logo {
-    height: 2.5rem;
-    will-change: filter;
-    transition: filter 200ms;
-  }
-  .logo.svelte:hover { filter: drop-shadow(0 0 6px #ff3e00aa); }
-
   .top-nav {
     display: flex;
     gap: 0.75rem;
@@ -173,6 +171,8 @@
 :global(body) { background: #f6f8fb; margin: 0 }
 
 .category-page { max-width: 760px; margin: 1.5rem auto }
+
+.content { flex: 1 1 auto; min-height: 0; overflow: auto; }
 
   .site-footer {
     margin-top: 2rem;
