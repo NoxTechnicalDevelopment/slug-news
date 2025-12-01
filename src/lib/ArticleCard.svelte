@@ -13,19 +13,17 @@
 </script>
 
 {#if href}
-  <a class="article-card card-link" href={href} target={article.url ? '_blank' : undefined} rel={article.url ? 'noreferrer noopener' : undefined} aria-label={article.title}>
+  <a class="article-card card-link" href={href} target={article.url ? '_blank' : undefined} rel={article.url ? 'noreferrer noopener' : undefined} aria-label={article.title} class:compact={compact}>
     <h3>{article.title}</h3>
+    <p class="summary {compact ? 'compact' : ''}">{article.summary}</p>
     {#if !compact}
-      <p class="summary">{article.summary}</p>
       <span class="read-more">Read more</span>
     {/if}
   </a>
 {:else}
-  <article class="article-card" aria-label={article.title}>
+  <article class="article-card" aria-label={article.title} class:compact={compact}>
     <h3>{article.title}</h3>
-    {#if !compact}
-      <p class="summary">{article.summary}</p>
-    {/if}
+    <p class="summary {compact ? 'compact' : ''}">{article.summary}</p>
     <!-- no link available -->
   </article>
 {/if}
@@ -49,6 +47,33 @@
     font-size: 1.85rem;
     line-height: 1.15;
     font-weight: 700;
+  }
+  .article-card.compact h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    color: rgba(15,23,42,0.85);
+  }
+  /* compact summary: truncated preview with fade */
+  .summary.compact {
+    max-height: 3.3rem; /* ~2 lines depending on font-size */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: rgba(15,23,42,0.75);
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+  .summary.compact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.2rem;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(255,255,255,0), #ffffff 60%);
   }
   .summary {
     margin: 0 0 0.9rem 0;
