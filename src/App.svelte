@@ -21,7 +21,7 @@
       name: 'Clubs',
       articles: [
         { title: 'Finding Your Place', summary: 'Move-in and early events like Slug Start and Cornucopia help new students find community, discover clubs, and settle into campus life.', slug: 'article1' },
-        { title: 'Quantum Breakthrough', summary: 'New qubit technique improves coherence times in lab demonstrations. Investors pour capital into generative models and applications. Investors pour capital into generative models and applications.', slug: 'article2' }
+        { title: 'A history of sustainability at UCSC: Earth Summit', summary: 'UCSC’s student clubs have a long tradition of sustainability, shaped by events like the Earth Summit and groups such as Enviroslug and the Student Environmental Center, making it easy for new students to get involved.', slug: 'article2' }
       ]
     },
     {
