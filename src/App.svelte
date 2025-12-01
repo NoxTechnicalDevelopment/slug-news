@@ -81,7 +81,7 @@
 <main class="news-site">
   <header class="site-header">
     <div class="brand">
-      <h1>Slug News</h1>
+      <h1>Slug Arts</h1>
     </div>
     <nav class="top-nav">
       {#each categories as c}
@@ -114,7 +114,7 @@
     {/if}
   </div>
 
-  <footer class="site-footer">© {new Date().getFullYear()} Slug News — Stud</footer>
+  <footer class="site-footer">© {new Date().getFullYear()} Slug News — Student Operated</footer>
 </main>
 
 <style>
@@ -145,11 +145,8 @@
     font-size: 2.2rem;
     font-weight: 800;
     display: inline-block;
-    background: #FFD93D; /* warm yellow */
     color: #0b1220;
-    padding: 0.15rem 0.4rem;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(21,27,36,0.06);
+    padding-bottom: 0.3rem;
   }
   .top-nav {
     display: flex;
